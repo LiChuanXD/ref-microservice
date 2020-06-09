@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-mongoose.connect('mongodb+srv://me:fccprojecttesting@fccurlshortener-qon03.mongodb.net/test?retryWrites=true&w=majority' ,{ 
+mongoose.connect('' ,{ 
     useNewUrlParser: true ,
     useUnifiedTopology: true
  }, (err)=>{
