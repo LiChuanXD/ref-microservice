@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <title>URL Shortener Microservice</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">H</a></li>
+            <li><a href="time.html">Timestamp Microservice</a></li>
+            <li><a href="header.html">Request Header Parser Microservice</a></li>
+            <li><a href="url.html">URL Shortener Microservice</a></li>
+            <li><a href="tracker.html">Exercise Tracker Microservice</a></li>
+            <li><a href="file.html">File Metadata Microservice</a></li>
+        </ul>
+    </nav>
+
+    <div id="content">
+
+        <h2>API Project: URL Shortener Microservice</h2>
+        <h3>User Story:</h3>
+
+        <ol>
+            <li>I can POST a URL to <code>[project_url]/api/shorturl/new</code> and I will receive a shortened URL in the JSON response.
+                Example : <code>{"original_url":"www.google.com","short_url":1}</code></li>
+            
+            <li>If I pass an invalid URL that doesn't follow the <code>http(s)://www.example.com(/more/routes)</code> format, the JSON response will contain an error like <code>{"error":"invalid URL"}</code><br>
+                HINT: to be sure that the submitted url points to a valid site you can use the function dns.lookup(host, cb) from the dns core module.</li>
+
+            <li>When I visit the shortened URL, it will redirect me to my original link.</li>
+        </ol>
+
+        <h3>Short URL Creation</h3>
+        <p>example: POST [project_url]/api/shorturl/new - https://www.google.com</p>
+
+        <div class="form">
+            <form method="POST" action="/api/shorturl/new">
+                <label for="url">URL to be shortened</label>
+                <input name="url" type="text" placeholder="Enter url here..">
+                <button type="submit">POST URL</button>
+            </form>
+        </div>
+
+        <h3>Example Usage :</h3>
+        <ol>
+            <li>type in an URL into the input field</li>
+            <li>if it is a valid URL, it will output a shortened url</li>
+            <li>replace <code>/new</code> with the new short url and it will redirect to your original url</li>
+        </ol>
+
+        <h3>Example Input :</h3>
+        <p><a href="/api/shorturl/k3XtIoQc">[project_url]/api/shorturl/k3XtIoQc</a></p>
+
+        <h3>Will Redirect to :</h3>
+        <p>https://www.google.com</p>
+
+
+    </div>
+
+    <footer>
+        <p>by <a href="#">me</a></p>
+    </footer>
+</body>
+</html>

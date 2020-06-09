@@ -1,0 +1,40 @@
+body{
+    padding :0;
+    margin : auto;
+    line-height : 1.8em;
+}
+
+#content , footer{
+    width : 650px;
+    margin : auto;
+    text-align: center;
+}
+
+#content .form{
+    border : 2px black solid;
+    padding : 25px;
+}
+
+ol{
+    text-align: justify;
+}
+
+nav{
+    margin : 0;
+    padding : 0;
+    background-color : lightgrey;
+    box-sizing : border-box;
+    overflow: hidden;
+}
+nav ul li{
+    display : inline;
+    padding : 0;
+    margin : auto 10px;
+}
+nav ul li a:hover{
+    font-weight : bold;
+}
+nav ul li a{
+    text-decoration: none;
+    color : black;
+}
